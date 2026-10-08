@@ -1,0 +1,35 @@
+For a new project
+
+When you create a new venv:
+
+my_project/
+├── venv/
+└── practice.ipynb
+
+You activate it:
+
+venv\Scripts\activate
+
+Then the first time only, install:
+
+pip install jupyter ipykernel
+
+and register it:
+
+python -m ipykernel install --user --name=my_project --display-name "Python (my_project)"
+
+After that, the kernel is registered.
+
+When you come back tomorrow
+
+You don't need to register it again.
+
+Just activate your environment:
+
+venv\Scripts\activate
+
+Then open your .ipynb and select:
+
+Python (my_project)
+
+That's it.
